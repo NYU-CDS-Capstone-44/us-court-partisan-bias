@@ -1,0 +1,82 @@
+Traceback (most recent call last):
+  File "/scratch/amr10211/capstone/RNN_LSTM.py", line 137, in <module>
+    history = model.fit(X_train, y_train, epochs=10, batch_size=250,
+  File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/ext3/miniconda3/lib/python3.9/site-packages/tensorflow/python/eager/execute.py", line 52, in quick_execute
+    tensors = pywrap_tfe.TFE_Py_Execute(ctx._handle, device_name, op_name,
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: Graph execution error:
+
+Detected at node 'cond/TensorArrayUnstack/TensorListFromTensor' defined at (most recent call last):
+    File "/scratch/amr10211/capstone/RNN_LSTM.py", line 137, in <module>
+      history = model.fit(X_train, y_train, epochs=10, batch_size=250,
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 1650, in fit
+      tmp_logs = self.train_function(iterator)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 1249, in train_function
+      return step_function(self, iterator)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 1233, in step_function
+      outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 1222, in run_step
+      outputs = model.train_step(data)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 1023, in train_step
+      y_pred = self(x, training=True)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/training.py", line 561, in __call__
+      return super().__call__(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/sequential.py", line 413, in call
+      return super().call(inputs, training=training, mask=mask)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/functional.py", line 511, in call
+      return self._run_internal_graph(inputs, training=training, mask=mask)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/functional.py", line 668, in _run_internal_graph
+      outputs = node.layer(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/bidirectional.py", line 278, in __call__
+      return super().__call__(inputs, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/bidirectional.py", line 405, in call
+      y = self.forward_layer(
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/base_rnn.py", line 556, in __call__
+      return super().__call__(inputs, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/engine/base_layer.py", line 1132, in __call__
+      outputs = call_fn(inputs, *args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 96, in error_handler
+      return fn(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/lstm.py", line 751, in call
+      ) = lstm_with_backend_selection(**normal_lstm_kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/lstm.py", line 1356, in lstm_with_backend_selection
+      gru_lstm_utils.function_register(defun_gpu_lstm, **params)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/gru_lstm_utils.py", line 257, in function_register
+      concrete_func = func.get_concrete_function(*args, **kwargs)
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/lstm.py", line 1305, in gpu_lstm_with_fallback
+      return tf.cond(
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/lstm.py", line 1290, in stardard_lstm_fn
+      return standard_lstm(
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/layers/rnn/lstm.py", line 983, in standard_lstm
+      last_output, outputs, new_states = backend.rnn(
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/backend.py", line 4942, in rnn
+      input_ta = tuple(
+    File "/ext3/miniconda3/lib/python3.9/site-packages/keras/backend.py", line 4943, in <genexpr>
+      ta.unstack(input_)
+Node: 'cond/TensorArrayUnstack/TensorListFromTensor'
+OOM when allocating tensor with shape[250,50] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc
+	 [[{{node cond/TensorArrayUnstack/TensorListFromTensor}}]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info. This isn't available when running in Eager mode.
+
+	 [[sequential/bidirectional/forward_lstm/PartitionedCall]]
+Hint: If you want to see a list of allocated tensors when OOM happens, add report_tensor_allocations_upon_oom to RunOptions for current allocation info. This isn't available when running in Eager mode.
+ [Op:__inference_train_function_14284]
