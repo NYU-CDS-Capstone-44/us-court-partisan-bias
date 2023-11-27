@@ -1,1 +1,2 @@
 RNN_LSTM_models/RNN_LSTM_10000trunc_10nodes.h5 filter=lfs diff=lfs merge=lfs -text
+RNN_LSTM_models/RNN_LSTM_512trunc_10nodes.h5 filter=lfs diff=lfs merge=lfs -text
