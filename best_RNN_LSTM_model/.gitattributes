@@ -1,0 +1,1 @@
+RNN_LSTM_4073trunc_100nodes_2layers_names_removed_summary_0.05drop15epochs.h5 filter=lfs diff=lfs merge=lfs -text
