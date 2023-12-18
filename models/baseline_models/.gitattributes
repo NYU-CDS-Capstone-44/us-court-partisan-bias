@@ -1,0 +1,4 @@
+baseline_model_topic.pkl filter=lfs diff=lfs merge=lfs -text
+baseline_test_topic_predictions.csv filter=lfs diff=lfs merge=lfs -text
+baseline_test_partisan_predictions.csv filter=lfs diff=lfs merge=lfs -text
+models/best_RNN_LSTM_model/RNN_LSTM_4073trunc_50nodes_4layers_names_removed_summary_0.05drop_removed_numbers_TOPIC.h5 filter=lfs diff=lfs merge=lfs -text

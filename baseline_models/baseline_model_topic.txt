@@ -1,5 +1,0 @@
-Best Hyperparameters:
-max_depth: 9
-n_estimators: 200
-
-Best Accuracy: 0.7087
