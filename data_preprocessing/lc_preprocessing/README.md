@@ -10,5 +10,7 @@
 4. `4_filter_final_split_lc_data`
     * `1_remove_multiple_authors`: 1 file for each chunk that filters for only the opinions imputed with `judges` from clusters where `judges` only has one name populated
     * `2_split_chunks_again`: 1 file for each chunk that splits the first 4 large chunks into smaller chunks to facilitate inference
-
+   
 The resulting files are utilized in the inference pipeline.
+
+`missing_data_analysis` includes some EDA on the opinions in the lower court that were missing authors, opinion text, or had less than 35 tokens
