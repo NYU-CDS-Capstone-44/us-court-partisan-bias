@@ -9,3 +9,4 @@ models/best_bert_models/ filter=lfs diff=lfs merge=lfs -text
 inference/bert_inference/ filter=lfs diff=lfs merge=lfs -text
 /inference/bert_inference/partisan_inference/ filter=lfs diff=lfs merge=lfs -text
 inference/bert_inference/partisan_inference/* filter=lfs diff=lfs merge=lfs -text
+inference/bert_inference/topic_inference/* filter=lfs diff=lfs merge=lfs -text
