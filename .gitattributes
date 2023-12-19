@@ -6,3 +6,6 @@ opinions-data-lc-labels.csv filter=lfs diff=lfs merge=lfs -text
 lower_court_data_labels_chunk1.csv filter=lfs diff=lfs merge=lfs -text
 data_preprocessing/lc_preprocessing/ filter=lfs diff=lfs merge=lfs -text
 models/best_bert_models/ filter=lfs diff=lfs merge=lfs -text
+inference/bert_inference/ filter=lfs diff=lfs merge=lfs -text
+/inference/bert_inference/partisan_inference/ filter=lfs diff=lfs merge=lfs -text
+inference/bert_inference/partisan_inference/* filter=lfs diff=lfs merge=lfs -text
