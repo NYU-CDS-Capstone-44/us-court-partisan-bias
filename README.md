@@ -40,10 +40,33 @@ partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter t
 <br>1.) Scripts to train model in .py and .s files
 <br>2.) Completed model is .h file
 *See all hyperparameter tuning results in [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link)
-<br><br>RNN_LSTM_partisan_test_predictions \& RNN_LSTM_topic_test_predictions: test accuracy of baseline model:
+<br><br>RNN_LSTM_partisan_test_predictions \& RNN_LSTM_topic_test_predictions: test accuracy of RNN LSTM model:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
 
 ### best_bert_models
+partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperparameter tuning
+<br>1.) Scripts to train models in .py and .SBATCH files
+<br>2.) Completed model is huggingface [annabelle add link]
+
+<br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT modelS:
+<br>1.) Run test inference in .py and .s files
+<br>2.) Output of test inference results in .csv file
+
+##inference
+
+### bert_inference
+
+### prep_inference_results_for_analysis
+
+### hand_label_sample
+
+### inference_samples
+
+##visualizations
+1.) EDA.ipynb: exploratory data analysis on supreme court data
+2.) test_results_BERT_legal.ipynb: test result and accuracy comparison for each partisan model 
+3.) test_results_topic.ipynb: test result and accuracy comparison for each topic model 
+4.) visualizations: lower court inference analyses.  Includes all visuals from poster and paper. 
 
 
