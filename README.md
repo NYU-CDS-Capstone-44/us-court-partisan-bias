@@ -39,7 +39,7 @@ partisan_baseline \& topic_baseline: grid search and gradient boosted trees base
 partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter tuning
 <br>1.) Scripts to train model in .py and .s files
 <br>2.) Completed model is .h file
-*See all hyperparameter tuning results in [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link)
+*See all hyperparameter tuning results in [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link) as RNN_LSTM_model_comparison
 <br><br>RNN_LSTM_partisan_test_predictions \& RNN_LSTM_topic_test_predictions: test accuracy of RNN LSTM model:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
@@ -49,24 +49,30 @@ partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperpara
 <br>1.) Scripts to train models in .py and .SBATCH files
 <br>2.) Completed model is huggingface [annabelle add link]
 
-<br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT modelS:
+<br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT models:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
 
 ##inference
 
 ### bert_inference
+1.) [annabelle add instructions]
 
-### prep_inference_results_for_analysis
-
+### prep_inference_results_for_analysis: clean up lower court inference data by merging partisan and topic predictions and obtaining author ids and appointing presidents.
+1.) Filter docket data for years  >= 1930 since the file is extremely large to work with using Jupyter Notebook: filter_docket.ipynb.  This output will be used when finding author and court ids in the inference_person_id_cleanup script.
+<br>2.) Use each of the inference_person_id_cleanup .py and .s files to clean up each chunk of the partisan inference results.  A Jupyter notebook version of this script that may be easier to follow is found in the archive folder in this folder (clean_author_ids.ipynb).
+<br>3.) Merge the cleaned partisan inference results with the topic inference results to get one final csv with all cleaned results using Jupyter notebook: merge_results.ipynb
+<br>4.) A compressed version of the final csv output can be found in the [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link) as inference_partisan_topic_results3.csv.gz
 ### hand_label_sample
 
 ### inference_samples
 
 ##visualizations
 1.) EDA.ipynb: exploratory data analysis on supreme court data
-2.) test_results_BERT_legal.ipynb: test result and accuracy comparison for each partisan model 
-3.) test_results_topic.ipynb: test result and accuracy comparison for each topic model 
-4.) visualizations: lower court inference analyses.  Includes all visuals from poster and paper. 
+<br>2.) test_results_BERT_legal.ipynb: test result and accuracy comparison for each partisan model 
+<br>3.) test_results_topic.ipynb: test result and accuracy comparison for each topic model 
+<br>4.) visualizations: lower court inference analyses.  Includes all visuals from poster and paper. 
 
+##archive
+contains older versions of files 
 
