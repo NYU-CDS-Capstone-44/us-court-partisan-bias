@@ -21,3 +21,27 @@ Courtlistener: opinions, opinions-cluster, dockets, people-db-people, people-db-
 ### lc_preprocessing: preprocess lower court data for inference and analysis
 1.) [annabelle add instructions]
 
+## models
+
+### word2vec_embeddings
+1.) Train Word2Vec embeddings (for use in baseline and RNN LSTM models using Jupyter Notebook: w2v_embeddings.ipynb
+<br>2.) Completed Word2Vec embeddings: w2v_embedding_model.bin
+
+### baseline_models
+partisan_baseline \& topic_baseline: grid search and gradient boosted trees baseline model training 
+<br>1.) Scripts to train model/grid search in .py and .s files
+<br>2.) Completed model is .pkl file
+<br><br>baseline_partisan_test_predictions \& baseline_topic_test_predictions: test accuracy of baseline model:
+<br>1.) Run test inference in .py and .s files
+<br>2.) Output of test inference results in .csv file
+
+### best_RNN_LSTM_model
+partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter tuning
+<br>1.) Scripts to train model in .py and .s files
+<br>2.) Completed model is .h file
+*See all hyperparameter tuning results in [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link)
+
+
+### best_bert_models
+
+
