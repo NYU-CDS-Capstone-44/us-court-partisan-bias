@@ -1,5 +1,7 @@
 # us-court-partisan-bias
-*Note: All files paths will need to be updated in scripts before running
+Notes: 
+*All files paths will need to be updated in scripts before running
+*Additional files are found in our [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link) 
 
 ## data_preprocessing
 ### Data to download from SCDB and CourtListener: 
