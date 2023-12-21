@@ -48,7 +48,6 @@ partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter t
 partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperparameter tuning
 <br>1.) Scripts to train models in .py and .SBATCH files
 <br>2.) Completed model is huggingface [annabelle add link]
-
 <br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT models:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
@@ -64,8 +63,10 @@ partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperpara
 <br>3.) Merge the cleaned partisan inference results with the topic inference results to get one final csv with all cleaned results using Jupyter notebook: merge_results.ipynb
 <br>4.) A compressed version of the final csv output can be found in the [GoogleDrive](https://drive.google.com/drive/folders/1FLyUYnxbc8VfNZUw-J5uK30uddR2MNgP?usp=drive_link) as inference_partisan_topic_results3.csv.gz
 ### hand_label_sample
-
+1.) Scripts to get inference data sample in .py and .s files
+<br>2.) Compare hand coded samples to inference sample in Jupyter notebook: check_hand_code.ipynb
 ### inference_samples
+1.) Inference samples from scripts in hand_label_sample found in .csv file
 
 ##visualizations
 1.) EDA.ipynb: exploratory data analysis on supreme court data
