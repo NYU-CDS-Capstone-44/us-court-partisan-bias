@@ -18,7 +18,10 @@ Courtlistener: opinions, opinions-cluster, dockets, people-db-people, people-db-
 <br>3.) For topic area prediction, extract the topic area using: extract_topic_area.ipynb
 
 ### training_data_summarization: summarize Supreme Court opinion text in training data for model training
-1.) [mary add instructions]
+1.) Pip install summarization_requirements.txt
+<br>2.) Run sc_text_summarization_longt5.py using sc_text_summarization_longt5.s batch script
+<br>3.) If there are batches generating CUDA Out-of-Memory errors, run sc_text_summarization_longt5_oom.py using sc_text_summarization_longt5_oom.s batch script
+<br>4.) Output for summarized opinion texts in summarized-opinions-data-sc.csv
 
 ### lc_preprocessing: preprocess lower court data for inference and analysis
 1.) [annabelle add instructions]
