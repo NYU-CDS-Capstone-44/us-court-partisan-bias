@@ -52,7 +52,7 @@ partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter t
 ### best_bert_models
 partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperparameter tuning
 <br>1.) Scripts to train models in .py and .SBATCH files
-<br>2.) Completed model in HuggingFace [annabelle add link]
+<br>2.) Completed model in HuggingFace https://huggingface.co/annabellehuether/partisan-legal-bert-base-uncased-supreme-court-32batch_5epoch_2e5lr_1wd
 <br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT models:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
