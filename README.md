@@ -81,7 +81,7 @@ Courtlistener: opinions, opinions-cluster, dockets, people-db-people, people-db-
 1.) `EDA.ipynb`: exploratory data analysis on supreme court data
 <br>2.) `test_results_BERT_legal.ipynb`: test result and accuracy comparison for each partisan model 
 <br>3.) `test_results_topic.ipynb`: test result and accuracy comparison for each topic model 
-<br>4.) visualizations: lower court inference analyses.  Includes all visuals from poster and paper. 
+<br>4.) `visualizations.ipynb`: lower court inference analyses.  Includes all visuals from poster and paper. 
 
 ## `archive`
 Contains older versions of files 
