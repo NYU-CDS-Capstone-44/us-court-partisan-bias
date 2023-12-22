@@ -24,7 +24,8 @@ Courtlistener: opinions, opinions-cluster, dockets, people-db-people, people-db-
 <br>4.) Output for summarized SC opinion texts in summarized-opinions-data-sc.csv
 
 ### lc_preprocessing: preprocess lower court data for inference and analysis
-1.) Follow the instructions in the README in data_preprocessing/lc_preprocessing which outlines the order to run lower court preprocessing files in 
+1.) Follow the instructions in the README in data_preprocessing/lc_preprocessing which outlines the order to run lower court preprocessing files
+<br>2.) Output will be about 9 csv files which are a broken up version of the bulk lower court data to speed up inference
 
 ## models
 
