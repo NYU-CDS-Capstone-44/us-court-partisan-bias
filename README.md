@@ -53,8 +53,8 @@ Courtlistener: opinions, opinions-cluster, dockets, people-db-people, people-db-
 ### `best_bert_models`
 `partisan_models` \& `topic_models`: best BERT and LEGAL-BERT models after hyperparameter tuning
 <br>1.) Scripts to train models in `.py` and `.SBATCH` files
-<br>2.) Best partisan model in HuggingFace https://huggingface.co/annabellehuether/partisan-legal-bert-base-uncased-supreme-court-32batch_5epoch_2e5lr_1wd
-<br>3.) Best topic model in HuggingFace https://huggingface.co/annabellehuether/topic-legal-bert-base-uncased-supreme-court-32batch_3epoch_3e5lr_01wd
+<br>2.) Best partisan model in [HuggingFace](https://huggingface.co/annabellehuether/partisan-legal-bert-base-uncased-supreme-court-32batch_5epoch_2e5lr_1wd)
+<br>3.) Best topic model in [HuggingFace](https://huggingface.co/annabellehuether/topic-legal-bert-base-uncased-supreme-court-32batch_3epoch_3e5lr_01wd)
 <br><br>`partisan_test_predictions` \& `topic_test_predictions`: test accuracy of BERT models:
 <br>1.) Run test inference in `.py` and `.s` files
 <br>2.) Output of test inference results in .csv file
