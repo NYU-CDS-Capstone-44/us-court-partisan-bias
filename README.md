@@ -64,6 +64,7 @@ partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperpara
 ### bert_inference
 1.) In partisan_inference run all .py scripts for all chunks of data (best partisan BERT model is hard encoded in these scripts)
 <br>2.) In topic_inference run all .py scripts for all chunks of data (best topic BERT model is hard encoded in these scripts)
+<br>3.) Output will be multiple .csv files containing the lower court inference results: e.g. inference_results_legal_BERT_chunk_1.csv
 
 ### prep_inference_results_for_analysis: clean up lower court inference data by merging partisan and topic predictions and obtaining author ids and appointing presidents.
 1.) Filter docket data for years  >= 1930 since the file is extremely large to work with using Jupyter Notebook: filter_docket.ipynb.  This output will be used when finding author and court ids in the inference_person_id_cleanup script.
