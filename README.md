@@ -52,7 +52,8 @@ partisan_RNN_LSTM \& topic_RNN_LSTM: best RNN LSTM models after hyperparameter t
 ### best_bert_models
 partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperparameter tuning
 <br>1.) Scripts to train models in .py and .SBATCH files
-<br>2.) Completed model in HuggingFace https://huggingface.co/annabellehuether/partisan-legal-bert-base-uncased-supreme-court-32batch_5epoch_2e5lr_1wd
+<br>2.) Best partisan model in HuggingFace https://huggingface.co/annabellehuether/partisan-legal-bert-base-uncased-supreme-court-32batch_5epoch_2e5lr_1wd
+<br>3.) Best topic model in HuggingFace https://huggingface.co/annabellehuether/topic-legal-bert-base-uncased-supreme-court-32batch_3epoch_3e5lr_01wd
 <br><br>partisan_test_predictions \& topic_test_predictions: test accuracy of BERT models:
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
@@ -60,7 +61,8 @@ partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperpara
 ##inference
 
 ### bert_inference
-1.) [annabelle add instructions]
+1.) In partisan_inference run all .py scripts for all chunks of data (best partisan BERT model is hard encoded in these scripts)
+2.) In topic_inference run all .py scripts for all chunks of data (best topic BERT model is hard encoded in these scripts)
 
 ### prep_inference_results_for_analysis: clean up lower court inference data by merging partisan and topic predictions and obtaining author ids and appointing presidents.
 1.) Filter docket data for years  >= 1930 since the file is extremely large to work with using Jupyter Notebook: filter_docket.ipynb.  This output will be used when finding author and court ids in the inference_person_id_cleanup script.
