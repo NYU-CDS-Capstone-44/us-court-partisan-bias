@@ -59,7 +59,7 @@ partisan_models \& topic_models: best BERT and LEGAL-BERT models after hyperpara
 <br>1.) Run test inference in .py and .s files
 <br>2.) Output of test inference results in .csv file
 
-##inference
+## inference
 
 ### bert_inference
 1.) In partisan_inference run all .py scripts for all chunks of data (best partisan BERT model is hard encoded in these scripts)
